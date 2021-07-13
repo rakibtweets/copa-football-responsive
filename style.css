@@ -32,10 +32,12 @@ header {
 .nav-links a {
     color: white;
     text-decoration: none;
-    padding-right: 36px;
+    /* padding-right: 36px; */
+    padding: 15px 18px;
     font-weight: 500;
     font-size: 16px;
 }
+
 .nav-login-button a {
     background-color: #e02c6d;
     padding: 10px 25px;
@@ -56,6 +58,7 @@ Landing Banner Style
     justify-content: space-between;
     align-items: center;
     padding: 70px 0;
+    position: relative;
 }
 .banner-details {
     align-items: center;
@@ -72,6 +75,12 @@ Landing Banner Style
 .landing-banner-img img {
     width: 556.01px;
     height: 438px;
+}
+.landing-banner-img:hover img{
+    /* width: 600px;
+    height: 500px; */
+    transform: translateY(50px);
+    transition: transform 1s ease-in .1s  ;
 }
 .watch-button a {
     background-color: #e02c6d;
@@ -173,11 +182,11 @@ footer{
 }
 .icon .fab{
     color: #969BAB;
-    font-size: 25px;
+    font-size: 35px;
     padding: 10px;
 }
 .footer-logo img {
-    
+
     width: 262px;
     height: 110px;
 }
