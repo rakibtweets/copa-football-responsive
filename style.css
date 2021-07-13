@@ -90,11 +90,9 @@ Landing Banner Style
 /* -------------------
 Player Section
 ---------------------- */
-main {
 
-}
 .footballers-info {
-    padding: 70px 195px;
+    padding: 70px 210px 0 180px;
 }
 .football-players {
     display: grid;
@@ -137,7 +135,7 @@ Newa Highlights Style
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 50px 170px;
+    padding: 150px  150px ;
 }
 .news-item {
     align-items: center;
@@ -179,6 +177,7 @@ footer{
     padding: 10px;
 }
 .footer-logo img {
+    
     width: 262px;
     height: 110px;
 }
