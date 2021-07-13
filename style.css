@@ -91,7 +91,7 @@ Landing Banner Style
 Player Section
 ---------------------- */
 main {
-    background-color: #f2f2f2;
+
 }
 .footballers-info {
     padding: 70px 195px;
@@ -106,6 +106,7 @@ main {
     height: 474px;
     background-color: white;
     box-shadow: 0 0 40px rgba(0, 0, 0, 0.15);
+    border-radius: 15px 15px;
     padding: 15px;
     margin-right: 30px;
 }
@@ -165,6 +166,7 @@ footer{
     display: flex;
     flex-direction: column;
     align-items: center;
+    
     
 }
 .social-media-icons{
