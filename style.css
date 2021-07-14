@@ -31,13 +31,13 @@ header {
     justify-content: space-between;
     align-items: center;
 }
-.menu-ber-icon {
+.menu-ber-icon  {
     display: none;
 }
+
 .nav-links a {
     color: white;
     text-decoration: none;
-    /* padding-right: 36px; */
     padding: 15px 18px;
     font-weight: 500;
     font-size: 16px;
@@ -152,9 +152,10 @@ Player Section
     color: #18191f;
 }
 .player-bio {
-    font-size: 16;
+    font-size: 16px;
     font-weight: 400;
     color: #6c6c6c;
+    text-align: justify;
 }
 
 /*-------------------
@@ -169,7 +170,6 @@ Newa Highlights Style
     display: flex;
     justify-content: space-between;
     align-items: center;
-    /* padding: 150px 150px; */
 }
 .news-item {
     align-items: center;
@@ -183,6 +183,8 @@ Newa Highlights Style
 .news-para {
     font-size: 16px;
     color: #6c6c6c;
+    width: 400px;
+    text-align: justify;
 }
 .watch-button {
     margin-top: 24px;
@@ -190,7 +192,7 @@ Newa Highlights Style
 .news-cover-img img {
     width: 567px;
     height: 427px;
-    padding-left: 50px;
+    /* padding-left: 50px; */
 }
 
 /*------------------
@@ -199,11 +201,13 @@ Footer Style
 footer {
     display: flex;
     flex-direction: column;
+    justify-content: center;
     align-items: center;
 }
 .social-media-icons {
     display: flex;
     justify-content: space-evenly;
+    align-items: center;
 }
 .icon .fab {
     color: #969bab;
@@ -231,8 +235,8 @@ footer {
 
 @media only screen and (max-width: 688px) {
     /* Responsive Navbar */
-    .container{
-        width: 360px;
+    .container {
+        width: 100%;
     }
     header {
         height: 360px;
@@ -244,33 +248,34 @@ footer {
         justify-content: space-between;
         align-items: center;
     }
-    .menu-ber-icon {
+    .menu-ber-icon{
         display: block;
     }
     .menu-ber-icon a {
         color: white;
         font-size: 24px;
     }
+    .fas {
+        display: inline-block;
+    }
     .nav-links {
         display: none;
     }
     #login-button {
-        display: none;
+        display: block;
     }
     /* Nav end */
 
     /* Landing Banner */
-    .container {
-        width: 360px;
-    }
+
     header {
         height: 695px;
-        padding: 30px 10px;
+        /* padding: 30px 10px; */
     }
     .landing-banner {
         flex-direction: column;
-        align-items: flex-start;
-        padding: 50px 0;
+        justify-content: center;
+        align-items: center;
     }
     .banner-title {
         width: 278px;
@@ -281,17 +286,54 @@ footer {
     .landing-banner-img img {
         width: 329px;
         height: 259px;
-        padding: 50px auto;
     }
     .watch-button {
         padding: 30px 0;
     }
     /* Landing Banner End */
- 
-    .football-players{
-        grid-template-columns: repeat(1,1fr);
-        align-items: center;
-       
+
+    .footballers-info {
+        padding: 30px 15px;
     }
-    
+    .football-players {
+        grid-template-columns: repeat(1, 1fr);
+        align-items: center;
+        margin: auto;
+    }
+    .player {
+        margin: 0 auto;
+    }
+
+    /*--------------------
+     Hightlights Style
+     -------------------- */
+
+    .news-highlights {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 20px 0;
+    }
+    .news-title {
+        font-size: 38px;
+    }
+
+    .news-cover-img img {
+        width: 400px;
+        height: 350px;
+    }
+    /*--------------------
+     Hightlights Style End
+     -------------------- */
+
+    /*--------------------
+     Footer Style Start
+     -------------------- */
+
+    footer {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding-top: 50px;
+    }
 }
