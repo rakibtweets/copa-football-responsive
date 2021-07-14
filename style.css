@@ -163,7 +163,7 @@ Player Section End
 -------------------- */
 
 /* -------------------
-Newa Highlights Style
+News Highlights Style
  ----------------------*/
 
 .news-highlights {
@@ -193,12 +193,53 @@ Newa Highlights Style
     width: 567px;
     height: 427px;
 }
+/* -------------------
+News Highlights Style  End
+ ----------------------*/
 
+/* -------------------
+Match Schadule sytle
+ ----------------------*/
+
+.match-schedules {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    background-color: #009cb3;
+    margin-top: 100px;
+    padding: 20px 20px;
+}
+.matches {
+    padding: 20px;
+    position: relative;
+}
+.score {
+    color: white;
+    font-size: 60px;
+    position: absolute;
+    left: 125px;
+    top: 230px;
+    visibility: hidden;
+}
+
+.matches img {
+    width: 350px;
+    height: 300px;
+    padding: 20px;
+    border-radius: 80%;
+}
+.matches:hover img {
+    transform: translatey(-40px);
+    transition: transform 0.5s ease-in;
+}
+.matches:hover img + .score {
+    visibility: initial;
+    transition: visibility 1s ease-in 0.5s;
+}
 /*------------------
 Footer Style 
 ---------------------*/
 .footer-items {
-    display: flex;
+    display: grid;
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -334,6 +375,26 @@ Footer Style
     /*--------------------
      Hightlights Style End
      -------------------- */
+    /*--------------------
+     Match Schadule Style
+     -------------------- */
+
+     .match-schedules{
+         grid-template-columns: repeat(1,1fr);
+         row-gap: 5px;
+     }
+     .score{
+         display: block;
+     }
+     .matches{
+         display: flex;
+         flex-direction: column;
+         justify-content: center;
+         align-items: center;
+     }
+     /*--------------------
+     Match Schadule Style End
+     -------------------- */
 
     /*--------------------
      Footer Style Start
@@ -345,7 +406,7 @@ Footer Style
         align-items: center;
         padding-top: 50px;
     }
-    .footer-logo img{
+    .footer-logo img {
         width: 271px;
         height: 65px;
     }
