@@ -312,7 +312,7 @@ Footer Style
 
     header {
         height: 695px;
-        /* padding: 30px 10px; */
+        
     }
     .landing-banner {
         flex-direction: column;
@@ -414,4 +414,103 @@ Footer Style
         width: 271px;
         height: 65px;
     }
+
+    /* ------------------------
+    Responsive for Mobile End 
+    ---------------------------*/
+}
+
+
+/* Media Queries for Tablet */
+
+@media only screen and (min-width: 689px) and (max-width: 991px){
+    .container {
+        width: 991px;
+    }
+    header {
+        height: 560px;
+        background-color: #2d25a0;
+        padding: 35px 20px;
+    }
+    .landing-banner {
+        justify-content: space-between;
+        align-items: center;
+    }
+    .half-width{
+        flex: 1;
+    }
+    .banner-details{
+        align-items: center;
+    }
+    .banner-title{
+        align-items: center;
+        font-size: 38px;
+        width: 300px;
+        height: 150px;
+    }
+    .watch-button {
+        padding: 30px 0;
+    }
+    .landing-banner-img img {
+        width: 400px;
+        height: 320px;
+    }
+
+    .footballers-info {
+        padding: 30px 15px;
+    }
+    .football-players {
+        grid-template-columns: repeat(2, 1fr);
+        align-items: center;
+        justify-items: center;
+        margin: auto;
+        grid-row-gap: 15px;
+        align-content: center;
+    }
+    .player {
+        margin: 0 auto;
+    }
+
+    /* hightlight section */
+
+    .news-highlights{
+        margin: auto;
+    }
+
+    .news-title{
+        font-size: 35px;
+    }
+    .news-para{
+        font-size: 14px;
+    }
+    .news-cover-img img{
+        width: 450px;
+        height: 350px;
+    }
+
+    /* match schedule */
+    .match-schedules{
+      
+       grid-template-columns: repeat(2,1fr );
+       align-items: center;
+       justify-items: center;
+       margin-top: 45px;
+       grid-row-gap: 15px;
+       align-content: center;
+
+    }
+    .matches img{
+        width: 100%;
+    }
+
+    /* footer section */
+
+    .footer-items{
+        padding-top: 100px;
+    }
+
+
+
+
+
 }
