@@ -197,24 +197,25 @@ Newa Highlights Style
 /*------------------
 Footer Style 
 ---------------------*/
-footer {
+.footer-items {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    padding-top: 150px;
 }
 .social-media-icons {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-around;
     align-items: center;
 }
 .icon .fab {
     color: #969bab;
-    font-size: 35px;
+    font-size: 32px;
     padding: 10px;
 }
 .footer-logo img {
-    width: 262px;
+    width: 483px;
     height: 110px;
 }
 .copy-right {
@@ -338,10 +339,14 @@ footer {
      Footer Style Start
      -------------------- */
 
-    footer {
+    .footer-items {
         flex-direction: column;
         justify-content: center;
         align-items: center;
         padding-top: 50px;
+    }
+    .footer-logo img{
+        width: 271px;
+        height: 65px;
     }
 }
