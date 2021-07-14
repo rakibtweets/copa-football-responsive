@@ -246,7 +246,7 @@ footer {
         display: flex;
         justify-content: space-between;
         align-items: center;
-        padding: 20px;
+        padding: 0 20px;
     }
     .menu-ber-icon {
         display: block;
@@ -344,5 +344,4 @@ footer {
         align-items: center;
         padding-top: 50px;
     }
-    
 }
