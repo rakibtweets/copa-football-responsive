@@ -200,12 +200,12 @@ News Highlights Style  End
 /* -------------------
 Match Schadule sytle
  ----------------------*/
-.match-bg{
+.match-bg {
     background-color: #009cb3;
 }
 .match-schedules {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);   
+    grid-template-columns: repeat(3, 1fr);
     margin-top: 100px;
 }
 .matches {
@@ -235,6 +235,72 @@ Match Schadule sytle
     visibility: initial;
     transition: visibility 1s ease-in 0.5s;
 }
+
+/* Final Match */
+
+.final-match {
+    height: 500px;
+    margin-top: 70px;
+}
+.match-heading {
+    text-align: center;
+    font-size: 50px;
+}
+.final-schedule {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+.vs {
+    font-size: 80px;
+    color: red;
+}
+
+.flag img {
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+}
+.argentina {
+    position: relative;
+    animation: arg-flag 3s ease-in-out infinite alternate;
+}
+@keyframes arg-flag {
+    from {
+        transform: translateX(0%);
+    }
+    to {
+        transform: translateX(80%);
+    }
+}
+
+.brazil {
+    position: relative;
+    animation: bra-flag 3s ease-in-out infinite alternate;
+}
+@keyframes bra-flag {
+    from {
+        transform: translateX(0%);
+    }
+    to {
+        transform: translateX(-80%);
+    }
+}
+
+.vs {
+    position: relative;
+    animation: vs-move 1s ease-in-out infinite alternate;
+}
+@keyframes vs-move {
+    from {
+        transform: translateY(0);
+    }
+    to {
+        transform: translateY(-15%);
+    }
+}
+
 /*------------------
 Footer Style 
 ---------------------*/
@@ -312,7 +378,6 @@ Footer Style
 
     header {
         height: 695px;
-        
     }
     .landing-banner {
         flex-direction: column;
@@ -379,20 +444,20 @@ Footer Style
      Match Schadule Style
      -------------------- */
 
-     .match-schedules{
-         grid-template-columns: repeat(1,1fr);
-         row-gap: 5px;
-     }
-     .score{
-         display: block;
-     }
-     .matches{
-         display: flex;
-         flex-direction: column;
-         justify-content: center;
-         align-items: center;
-     }
-     /*--------------------
+    .match-schedules {
+        grid-template-columns: repeat(1, 1fr);
+        row-gap: 5px;
+    }
+    .score {
+        display: block;
+    }
+    .matches {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    /*--------------------
      Match Schadule Style End
      -------------------- */
 
@@ -406,9 +471,8 @@ Footer Style
         align-items: center;
         padding-top: 50px;
     }
-    .copy-right{
+    .copy-right {
         text-align: center;
-
     }
     .footer-logo img {
         width: 271px;
@@ -420,10 +484,9 @@ Footer Style
     ---------------------------*/
 }
 
-
 /* Media Queries for Tablet */
 
-@media only screen and (min-width: 689px) and (max-width: 991px){
+@media only screen and (min-width: 689px) and (max-width: 991px) {
     .container {
         width: 991px;
     }
@@ -436,13 +499,13 @@ Footer Style
         justify-content: space-between;
         align-items: center;
     }
-    .half-width{
+    .half-width {
         flex: 1;
     }
-    .banner-details{
+    .banner-details {
         align-items: center;
     }
-    .banner-title{
+    .banner-title {
         align-items: center;
         font-size: 38px;
         width: 300px;
@@ -473,44 +536,39 @@ Footer Style
 
     /* hightlight section */
 
-    .news-highlights{
+    .news-highlights {
         margin: auto;
     }
 
-    .news-title{
+    .news-title {
         font-size: 35px;
     }
-    .news-para{
+    .news-para {
         font-size: 14px;
     }
-    .news-cover-img img{
+    .news-cover-img img {
         width: 450px;
         height: 350px;
     }
 
     /* match schedule */
-    .match-schedules{
-      
-       grid-template-columns: repeat(2,1fr );
-       align-items: center;
-       justify-items: center;
-       margin-top: 45px;
-       grid-row-gap: 15px;
-       align-content: center;
-
+    .match-schedules {
+        grid-template-columns: repeat(2, 1fr);
+        align-items: center;
+        justify-items: center;
+        margin-top: 45px;
+        grid-row-gap: 15px;
+        align-content: center;
     }
-    .matches img{
+    .matches img {
         width: 100%;
     }
 
     /* footer section */
 
-    .footer-items{
+    .footer-items {
         padding-top: 100px;
     }
 
-
-
-
-
+    /* Tablet Responsive end */
 }
