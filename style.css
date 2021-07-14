@@ -244,7 +244,9 @@ Match Schadule sytle
 }
 .match-heading {
     text-align: center;
-    font-size: 50px;
+    font-size: 60px;
+    color: dodgerblue;
+    padding: 10px;
 }
 .final-schedule {
     display: flex;
