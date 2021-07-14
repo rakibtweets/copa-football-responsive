@@ -29,6 +29,9 @@ header {
     justify-content: space-between;
     align-items: center;
 }
+.menu-ber-icon {
+    display: none;
+}
 .nav-links a {
     color: white;
     text-decoration: none;
@@ -69,28 +72,53 @@ Landing Banner Style
     color: white;
     padding: 20px 0;
 }
+.banner-title span:hover {
+    font-size: 70px;
+    
+    transition: .5s ease-in;
+}
 .half-width {
     flex: 1;
 }
 .landing-banner-img img {
     width: 556.01px;
     height: 438px;
+    position: relative;
+    animation: 2s linear 1s infinite alternate mymove;
 }
-.landing-banner-img:hover img{
-    /* width: 600px;
-    height: 500px; */
-    transform: translateY(50px);
-    transition: transform 1s ease-in .1s  ;
+@keyframes mymove {
+    from{
+        top:0;
+    }
+    to{
+        top:50px
+    }
+    
 }
+
+
 .watch-button a {
     background-color: #e02c6d;
     padding: 10px 25px;
     color: white;
     text-decoration: none;
+    position: relative;
+    animation: .5s ease-in .5s infinite alternate watch-live;
 }
+@keyframes watch-live {
+    from{
+        left:0;
+    }
+    to{
+        left:20px
+    }
+    
+}
+
 .watch-button .arrow-icon {
     padding-left: 10px;
 }
+
 
 /*-------------------
  Landing Banner End 
@@ -144,7 +172,7 @@ Newa Highlights Style
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 150px  150px ;
+    padding: 150px 150px;
 }
 .news-item {
     align-items: center;
@@ -168,29 +196,28 @@ Newa Highlights Style
     padding-left: 50px;
 }
 
-/* Footer Style */
-footer{
+/*------------------
+Footer Style 
+---------------------*/
+footer {
     display: flex;
     flex-direction: column;
     align-items: center;
-    
-    
 }
-.social-media-icons{
+.social-media-icons {
     display: flex;
     justify-content: space-evenly;
 }
-.icon .fab{
-    color: #969BAB;
+.icon .fab {
+    color: #969bab;
     font-size: 35px;
     padding: 10px;
 }
 .footer-logo img {
-
     width: 262px;
     height: 110px;
 }
-.copy-right{
+.copy-right {
     font-size: 18px;
     padding: 10px;
 }
