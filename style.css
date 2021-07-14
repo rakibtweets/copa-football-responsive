@@ -200,13 +200,13 @@ News Highlights Style  End
 /* -------------------
 Match Schadule sytle
  ----------------------*/
-
+.match-bg{
+    background-color: #009cb3;
+}
 .match-schedules {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    background-color: #009cb3;
+    grid-template-columns: repeat(3, 1fr);   
     margin-top: 100px;
-    padding: 20px 20px;
 }
 .matches {
     padding: 20px;
@@ -239,7 +239,7 @@ Match Schadule sytle
 Footer Style 
 ---------------------*/
 .footer-items {
-    display: grid;
+    display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -405,6 +405,10 @@ Footer Style
         justify-content: center;
         align-items: center;
         padding-top: 50px;
+    }
+    .copy-right{
+        text-align: center;
+
     }
     .footer-logo img {
         width: 271px;
