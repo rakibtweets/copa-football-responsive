@@ -31,7 +31,7 @@ header {
     justify-content: space-between;
     align-items: center;
 }
-.menu-ber-icon  {
+.menu-ber-icon {
     display: none;
 }
 
@@ -192,7 +192,6 @@ Newa Highlights Style
 .news-cover-img img {
     width: 567px;
     height: 427px;
-    /* padding-left: 50px; */
 }
 
 /*------------------
@@ -248,7 +247,7 @@ footer {
         justify-content: space-between;
         align-items: center;
     }
-    .menu-ber-icon{
+    .menu-ber-icon {
         display: block;
     }
     .menu-ber-icon a {
@@ -314,13 +313,22 @@ footer {
         align-items: center;
         padding: 20px 0;
     }
+    .news-items{
+        padding: 30px 20px;
+    }
     .news-title {
-        font-size: 38px;
+        font-size: 30px;
+        text-align: center;
+       
+    }
+    .news-para{
+        font-size: 16px;
+        padding: 10px 10px;
     }
 
     .news-cover-img img {
-        width: 400px;
-        height: 350px;
+        width: 328px;
+        height: 248px;
     }
     /*--------------------
      Hightlights Style End
